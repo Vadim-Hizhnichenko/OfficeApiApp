@@ -121,6 +121,17 @@ namespace Data
                     DepartmentId = 5
 
                 });
+            modelBuilder.Entity<Employee>().HasData(
+                new Employee
+                {
+                    EmployeeId = 9,
+                    FirstName = "Bogdan",
+                    LastName = "Bogdanovich",
+                    Gender = Gender.Male,
+                    DataOfBirthday = new DateTime(1996, 6, 11),
+                    DepartmentId = 4
+
+                });
 
 
         }
